@@ -8,7 +8,7 @@
 	<version>1.0-SNAPSHOT</version>
 	<name>Aggregator</name>
 	<modules>
-		<module>object-size-aspectj</module>
 		<module>object-size-agent</module>
+		<module>object-size-aspectj</module>
 	</modules>
 </project>
