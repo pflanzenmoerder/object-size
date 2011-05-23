@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aspectj>
+	<!-- configure the aspects we just created above -->
+	<aspects>
+		<aspect name="de.codepitbull.ObjectSizeAspect" />
+	</aspects>
+	<!-- configure the weaver -->
+	<weaver
+		options="-verbose -proceedOnError -Xset:fastWeaving=true,weaveJavaPackages=true,weaveJavaxPackages=true ">
+		<include within="org.apache.wicket..*" />
+
+	</weaver>
+</aspectj>
