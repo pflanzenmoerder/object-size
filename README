@@ -1,4 +1,4 @@
-All stuff in here is APache 2.0 License.
+All stuff in here is Apache 2.0 License.
 
 Add the following jars to the <tomcat-installation>/lib folder (this is the COMMON-lib folder of tomcat, for other versions of tomcat consult the manual which folder that would be):
 aspectjrt.jar
@@ -11,4 +11,4 @@ Add the following to your tomcat launch config:
 
 Optional:
 Provide the classname for the strategy to use:
--Dobjectsize.strategy=de.codepitbull.objectsize.strategy.InstrumentationObjectSizeOfStrategy
+-Dobjectsize.strategy=<classname of ISizeOfStrategy>
