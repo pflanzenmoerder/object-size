@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aspectj>
-	<!-- configure the aspects we just created above -->
 	<aspects>
-		<aspect name="de.codepitbull.ObjectSizeAspect" />
+		<aspect name="de.codepitbull.objectsize.aspectj.ObjectSizeAspect" />
 	</aspects>
 	<!-- configure the weaver -->
 	<weaver
