@@ -1,0 +1,8 @@
+Add the following jars to the <tomcat-installation>/lib folder (this is the COMMON-lib folder of tomcat, for other versions of tomcat consult the manual which folder that would be):
+aspectjrt.jar
+aspectjweaver.jar
+
+In the same folder create META-INF and put the aop.xml there. 
+
+Add the following to your tomcat launch config:
+-javaagent:<path to object-size-agent-1.0-SNAPSHOT.jar> -javaagent:<path to apache-tomcat-6.0.32/lib/aspectjweaver.jar> -Dorg.aspectj.weaver.showWeaveInfo=true -Daj.weaving.verbose=true -Dorg.aspectj.weaver.showWeaveInfo=true
