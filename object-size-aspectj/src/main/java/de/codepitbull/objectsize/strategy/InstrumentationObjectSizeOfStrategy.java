@@ -24,6 +24,9 @@ import java.lang.instrument.Instrumentation;
 import de.codepitbull.objectsize.agent.ISizeOfStrategy;
 
 /**
+ * NOTE: Taken from the wicket distribution.
+ * 
+ * 
  * Object size of strategy that is based on instrumentation.
  * 
  * @author eelcohillenius
