@@ -4,8 +4,12 @@ package de.codepitbull.objectsize.strategy;
  * http://www.javaspecialists.eu/archive/Issue142.html
  */
 import java.lang.instrument.Instrumentation;
-import java.lang.reflect.*;
-import java.util.*;
+import java.lang.reflect.Array;
+import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
+import java.util.IdentityHashMap;
+import java.util.Map;
+import java.util.Stack;
 
 import de.codepitbull.objectsize.agent.ISizeOfStrategy;
 
@@ -13,7 +17,7 @@ public class DeepInstrumentationSizeOfStrategy implements ISizeOfStrategy {
 	private Instrumentation instrumentation;
 
 	public Long sizeOf(Object object, Instrumentation instrumentation) {
-		this.instrumentation=instrumentation;
+		this.instrumentation = instrumentation;
 		return deepSizeOf(object);
 	}
 
